@@ -111,4 +111,7 @@ alias nvimconf='cd ~/.config/nvim && nvim'
 alias ezteam='cd ~/Global/ezteam'
 alias offshorevn-api='ezteam && cd dev/offshorevn-api'
 alias offshorevn-fe='ezteam && cd dev/offshorevn-fe'
+alias ezteam-deploy-prod-api='ezteam && ssh -i ./ezteam ec2-user@13.212.143.195'
 
+alias pbl5='cd ~/Global/pbl5'
+alias pbl5-api='pbl5 && cd pbl5-api'
