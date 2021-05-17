@@ -104,6 +104,8 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export FZF_DEFAULT_COMMAND='fd --type file --exclude node_modules --exclude .next --hidden'
 
+alias ssh='kitty +kitten ssh'
+
 alias dotfiles='cd ~/dotfiles'
 
 alias nvimconf='cd ~/.config/nvim && nvim'
@@ -111,8 +113,11 @@ alias nvimconf='cd ~/.config/nvim && nvim'
 alias ezteam='cd ~/Global/ezteam'
 alias offshorevn-api='ezteam && cd dev/offshorevn-api'
 alias offshorevn-fe='ezteam && cd dev/offshorevn-fe'
+alias ezteam-check-health='ezteam && cd ezteam-check-health'
 alias ezteam-deploy-prod-api='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.143.195'
 alias ezteam-deploy-dev='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
+alias ezteam-deploy-log='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
 
 alias pbl5='cd ~/Global/pbl5'
 alias pbl5-api='pbl5 && cd pbl5-api'
+alias pbl5-api='pbl5 && cd pbl5-fe'
