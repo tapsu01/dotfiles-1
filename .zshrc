@@ -120,4 +120,4 @@ alias ezteam-deploy-log='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
 
 alias pbl5='cd ~/Global/pbl5'
 alias pbl5-api='pbl5 && cd pbl5-api'
-alias pbl5-api='pbl5 && cd pbl5-fe'
+alias pbl5-fe='pbl5 && cd pbl5-fe'
