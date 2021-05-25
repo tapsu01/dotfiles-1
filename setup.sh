@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cp .zshrc ~/.zshrc
-# cp -r .config ~/.config
+# cp .zshrc ~/.zshrc
+cp -r .config/sxhkd/ ~/.config/
+
 echo 'Copying successfully'
 source ~/.zshrc
