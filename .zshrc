@@ -110,7 +110,7 @@ alias dotfiles='cd ~/dotfiles'
 
 alias nvimconf='cd ~/.config/nvim && nvim'
 
-alias ezteam='cd ~/Global/ezteam'
+alias ezteam='cd ~/global/ezteam'
 alias offshorevn-api='ezteam && cd dev/offshorevn-api'
 alias offshorevn-fe='ezteam && cd dev/offshorevn-fe'
 alias ezteam-check-health='ezteam && cd ezteam-check-health'
@@ -121,6 +121,6 @@ alias ezteam-deploy-dev='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
 alias ezteam-deploy-log='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
 alias ezteam-deploy-cicd='ezteam && ssh -i ./ezteam.pem ec2-user@13.228.21.39'
 
-alias pbl5='cd ~/Global/pbl5'
+alias pbl5='cd ~/global/pbl5'
 alias pbl5-api='pbl5 && cd pbl5-api'
 alias pbl5-fe='pbl5 && cd pbl5-fe'
