@@ -106,12 +106,13 @@ export FZF_DEFAULT_COMMAND='fd --type file --exclude node_modules --exclude .nex
 
 alias ssh='kitty +kitten ssh'
 
-alias dotfiles='cd ~/dotfiles'
 
 alias nvimconf='cd ~/.config/nvim && nvim'
 alias rm='rm -i'
 
 alias global='cd ~/global'
+
+alias dotfiles='global && cd dotfiles'
 
 alias ezteam='cd ~/global/ezteam'
 alias offshorevn-api='ezteam && cd dev/offshorevn-api'
