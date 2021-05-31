@@ -130,7 +130,7 @@ alias ezteam-deploy-log='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
 alias ezteam-deploy-sandbox='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.7.30'
 
 alias ezteam-deploy-dev-fe='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
-alias ezteam-deploy-dev-api'ezteam && ssh -i ./ezteam.pem ec2-user@54.169.243.85'
+alias ezteam-deploy-dev-api='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.243.85'
 
 alias ezteam-deploy-cicd='ezteam && ssh -i ./ezteam.pem ec2-user@13.228.21.39'
 
