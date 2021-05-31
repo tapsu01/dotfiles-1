@@ -110,20 +110,30 @@ alias ssh='kitty +kitten ssh'
 alias nvimconf='cd ~/.config/nvim && nvim'
 alias rm='rm -i'
 
+
 alias global='cd ~/global'
+
 
 alias dotfiles='global && cd dotfiles'
 
+
 alias ezteam='cd ~/global/ezteam'
+
 alias offshorevn-api='ezteam && cd dev/offshorevn-api'
 alias offshorevn-fe='ezteam && cd dev/offshorevn-fe'
 alias ezteam-check-health='ezteam && cd ezteam-check-health'
+
 alias ezteam-deploy-prod-api='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.143.195'
 alias ezteam-deploy-prod-fe='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.79.213'
-alias ezteam-deploy-sandbox='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.7.30'
-alias ezteam-deploy-dev='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
 alias ezteam-deploy-log='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
+
+alias ezteam-deploy-sandbox='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.7.30'
+
+alias ezteam-deploy-dev-fe='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
+alias ezteam-deploy-dev-api'ezteam && ssh -i ./ezteam.pem ec2-user@54.169.243.85'
+
 alias ezteam-deploy-cicd='ezteam && ssh -i ./ezteam.pem ec2-user@13.228.21.39'
+
 
 alias pbl5='cd ~/global/pbl5'
 alias pbl5-api='pbl5 && cd pbl5-api'
