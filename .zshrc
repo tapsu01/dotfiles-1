@@ -140,3 +140,5 @@ alias pbl5-fe='pbl5 && cd pbl5-fe'
 alias pbl5-rasp='pbl5 && cd pbl5-rasp'
 
 alias my-blog='global && cd blog'
+
+export PATH=$HOME/.local/bin:$PATH
