@@ -126,11 +126,8 @@ alias ezteam-check-health='ezteam && cd ezteam-check-health'
 alias ezteam-deploy-prod-api='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.143.195'
 alias ezteam-deploy-prod-fe='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.79.213'
 alias ezteam-deploy-log='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
-
 alias ezteam-deploy-sandbox='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.7.30'
-
 alias ezteam-deploy-dev='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
-
 alias ezteam-deploy-cicd='ezteam && ssh -i ./ezteam.pem ec2-user@13.228.21.39'
 
 
@@ -138,6 +135,9 @@ alias pbl5='cd ~/global/pbl5'
 alias pbl5-api='pbl5 && cd pbl5-api'
 alias pbl5-fe='pbl5 && cd pbl5-fe'
 alias pbl5-rasp='pbl5 && cd pbl5-rasp'
+
+alias mobile-project="global && cd mobile-project"
+alias mobile-api="mobile-project && cd mobile-api"
 
 alias my-blog='global && cd blog'
 

@@ -7,5 +7,6 @@ source ~/.zshrc
 # cp -R .config/sxhkd/ ~/.config/
 # cp -R .config/rofi ~/.config/
 # cp -R .config/kitty ~/.config
+# cp -R .config/onedrive ~/.config
 
 echo 'Copying successfully'
