@@ -143,5 +143,5 @@ alias my-blog='global && cd blog'
 
 alias cp-training='global && cd cp-training'
 
-alias codeforces='cp-training && cd codeforces'
+alias codeforces='cp-training && cd Codeforces'
 export PATH=$HOME/.local/bin:$PATH
