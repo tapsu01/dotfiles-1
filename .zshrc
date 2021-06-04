@@ -142,6 +142,7 @@ alias mobile-api="mobile-project && cd mobile-api"
 alias my-blog='global && cd blog'
 
 alias cp-training='global && cd cp-training'
-
 alias codeforces='cp-training && cd Codeforces'
+alias vnoi='cp-training && cd VNOI'
+
 export PATH=$HOME/.local/bin:$PATH
