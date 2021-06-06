@@ -78,7 +78,7 @@ curl -fsS https://dlang.org/install.sh | bash -s dmd
 
 git clone https://github.com/abraunegg/onedrive.git
 cd onedrive
-./configure DC=~/ldc2-1.17.0-linux-armhf/bin/ldmd2
+./configure
 make clean; make
 sudo make install
 ```
