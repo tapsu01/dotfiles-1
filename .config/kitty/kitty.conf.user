@@ -1,18 +1,15 @@
 # vim:fileencoding=utf-8:ft=conf:foldmethod=marker
 
-# include colorscheme
-include colors.conf
-
 #: Fonts {{{
 
 #: kitty has very powerful font management. You can configure
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family       FuraCode Nerd Font
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
+# font_family      monospace
+# bold_font        auto
+# italic_font      auto
+# bold_italic_font auto
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -21,37 +18,17 @@ bold_italic_font auto
 #: families that have many weight variants like Book, Medium, Thick,
 #: etc. For example::
 
-#:     font_family       FuraCode Nerd Font
+font_family     Fira Code Medium
 #:     bold_font        Operator Mono Medium
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size  11
+# font_size 11.0
 
 #: Font size (in pts)
 
-# force_ltr no
-
-#: kitty does not support BIDI (bidirectional text), however, for RTL
-#: scripts, words are automatically displayed in RTL. That is to say,
-#: in an RTL script, the words "HELLO WORLD" display in kitty as
-#: "WORLD HELLO", and if you try to select a substring of an RTL-
-#: shaped string, you will get the character that would be there had
-#: the the string been LTR. For example, assuming the Hebrew word
-#: ירושלים, selecting the character that on the screen appears to be ם
-#: actually writes into the selection buffer the character י.
-
-#: kitty's default behavior is useful in conjunction with a filter to
-#: reverse the word order, however, if you wish to manipulate RTL
-#: glyphs, it can be very challenging to work with, so this option is
-#: provided to turn it off. Furthermore, this option can be used with
-#: the command line program GNU FriBidi
-#: <https://github.com/fribidi/fribidi#executable> to get BIDI
-#: support, because it will force kitty to always treat the text as
-#: LTR, which FriBidi expects for terminals.
-
-adjust_line_height  0
-adjust_column_width 0
+# adjust_line_height  0
+# adjust_column_width 0
 
 #: Change the size of each character cell kitty renders. You can use
 #: either numbers, which are interpreted as pixels or percentages
@@ -86,53 +63,6 @@ adjust_column_width 0
 #:     map alt+2 disable_ligatures_in all never
 #:     map alt+3 disable_ligatures_in tab cursor
 
-# font_features none
-
-#: Choose exactly which OpenType features to enable or disable. This
-#: is useful as some fonts might have features worthwhile in a
-#: terminal. For example, Fira Code Retina includes a discretionary
-#: feature, zero, which in that font changes the appearance of the
-#: zero (0), to make it more easily distinguishable from Ø. Fira Code
-#: Retina also includes other discretionary features known as
-#: Stylistic Sets which have the tags ss01 through ss20.
-
-#: Note that this code is indexed by PostScript name, and not the font
-#: family. This allows you to define very precise feature settings;
-#: e.g. you can disable a feature in the italic font but not in the
-#: regular font.
-
-#: To get the PostScript name for a font, use kitty + list-fonts
-#: --psnames::
-
-#:     $ kitty + list-fonts --psnames | grep Fira
-#:     Fira Code
-#:     Fira Code Bold (FiraCode-Bold)
-#:     Fira Code Light (FiraCode-Light)
-#:     Fira Code Medium (FiraCode-Medium)
-#:     Fira Code Regular (FiraCode-Regular)
-#:     Fira Code Retina (FiraCode-Retina)
-
-#: The part in brackets is the PostScript name.
-
-#: Enable alternate zero and oldstyle numerals::
-
-#:     font_features FiraCode-Retina +zero +onum
-
-#: Enable only alternate zero::
-
-#:     font_features FiraCode-Retina +zero
-
-#: Disable the normal ligatures, but keep the calt feature which (in
-#: this font) breaks up monotony::
-
-#:     font_features TT2020StyleB-Regular -liga +calt
-
-#: In conjunction with force_ltr, you may want to disable Arabic
-#: shaping entirely, and only look at their isolated forms if they
-#: show up in a document. You can do this with e.g.::
-
-#:     font_features UnifontMedium +isol -medi -fina -init
-
 # box_drawing_scale 0.001, 1, 1.5, 2
 
 #: Change the sizes of the lines used for the box drawing unicode
@@ -144,17 +74,17 @@ adjust_column_width 0
 
 #: Cursor customization {{{
 
-#cursor #cccccc
+# cursor #cccccc
 
 #: Default cursor color
 
-#cursor_text_color #111111
+# cursor_text_color #111111
 
 #: Choose the color of text under the cursor. If you want it rendered
 #: with the background color of the cell underneath instead, use the
 #: special keyword: background
 
-cursor_shape block
+# cursor_shape block
 
 #: The cursor shape can be one of (block, beam, underline)
 
@@ -174,7 +104,7 @@ cursor_shape block
 
 #: Scrollback {{{
 
-scrollback_lines 2000
+# scrollback_lines 2000
 
 #: Number of lines of history to keep in memory for scrolling back.
 #: Memory is allocated on demand. Negative numbers are (effectively)
@@ -227,8 +157,8 @@ scrollback_lines 2000
 #: robustly with the ever-changing sea of bugs that is Cocoa is too
 #: much effort.
 
-url_color #0087bd
-url_style single
+# url_color #0087bd
+# url_style curly
 
 #: The color and style for highlighting URLs on mouse-over. url_style
 #: can be one of: none, single, double, curly
@@ -296,7 +226,7 @@ url_style single
 # pointer_shape_when_grabbed arrow
 
 #: The shape of the mouse pointer when the program running in the
-#: terminal grabs the mouse. Valid values are: arrow, beam and hand
+#: terminal grabs the mouse.
 
 #: }}}
 
@@ -333,7 +263,7 @@ url_style single
 
 #: Terminal bell {{{
 
-enable_audio_bell yes
+# enable_audio_bell yes
 
 #: Enable/disable the audio bell. Useful in environments that require
 #: silence.
@@ -377,9 +307,9 @@ enable_audio_bell yes
 
 #: The enabled window layouts. A comma separated list of layout names.
 #: The special value all means all layouts. The first listed layout
-#: will be used as the startup layout. Default configuration is all
-#: layouts in alphabetical order. For a list of available layouts, see
-#: the https://sw.kovidgoyal.net/kitty/index.html#layouts.
+#: will be used as the startup layout. For a list of available
+#: layouts, see the
+#: https://sw.kovidgoyal.net/kitty/index.html#layouts.
 
 # window_resize_step_cells 2
 # window_resize_step_lines 2
@@ -403,7 +333,7 @@ enable_audio_bell yes
 #: that setting a non-zero window margin overrides this and causes all
 #: borders to be drawn.
 
-window_margin_width 10.0
+# window_margin_width 0.0
 
 #: The window margin (in pts) (blank area outside the border)
 
@@ -448,10 +378,9 @@ window_margin_width 10.0
 
 # hide_window_decorations no
 
-#: Hide the window decorations (title-bar and window borders) with
-#: yes. On macOS, titlebar-only can be used to only hide the titlebar.
-#: Whether this works and exactly what effect it has depends on the
-#: window manager/operating system.
+#: Hide the window decorations (title-bar and window borders). Whether
+#: this works and exactly what effect it has depends on the window
+#: manager/operating system.
 
 # resize_debounce_time 0.1
 
@@ -467,15 +396,6 @@ window_margin_width 10.0
 #: unchanged. A value of scale means draw the current window contents
 #: scaled. A value of blank means draw a blank window. A value of size
 #: means show the window size in cells.
-
-# resize_in_steps no
-
-#: Resize the OS window in steps as large as the cells, instead of
-#: with the usual pixel accuracy. Combined with an
-#: initial_window_width and initial_window_height in number of cells,
-#: this option can be used to keep the margins as small as possible
-#: when resizing the OS window. Note that this does not currently work
-#: on Wayland.
 
 #: }}}
 
@@ -530,11 +450,6 @@ window_margin_width 10.0
 #: like: {index}: {title}. Useful if you have shortcuts mapped for
 #: goto_tab N.
 
-# active_tab_title_template none
-
-#: Template to use for active tabs, if not specified falls back to
-#: tab_title_template.
-
 # active_tab_foreground   #000
 # active_tab_background   #eee
 # active_tab_font_style   bold-italic
@@ -544,21 +459,16 @@ window_margin_width 10.0
 
 #: Tab bar colors and styles
 
-# tab_bar_background none
-
-#: Background color for the tab bar. Defaults to using the terminal
-#: background color.
-
 #: }}}
 
 #: Color scheme {{{
 
-#foreground #dddddd
-#background #000000
+# foreground #dddddd
+# background #000000
 
 #: The foreground and background colors
 
-#background_opacity 1.0
+# background_opacity 1.0
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
 #: opaque and 0 is fully transparent.  This will only work if
@@ -641,30 +551,6 @@ window_margin_width 10.0
 
 #: white
 
-# mark1_foreground black
-
-#: Color for marks of type 1
-
-# mark1_background #98d3cb
-
-#: Color for marks of type 1 (light steel blue)
-
-# mark2_foreground black
-
-#: Color for marks of type 2
-
-# mark2_background #f2dcd3
-
-#: Color for marks of type 1 (beige)
-
-# mark3_foreground black
-
-#: Color for marks of type 3
-
-# mark3_background #f274bc
-
-#: Color for marks of type 1 (violet)
-
 #: }}}
 
 #: Advanced {{{
@@ -695,7 +581,7 @@ window_margin_width 10.0
 #: to yes means that any background processes still using the terminal
 #: can fail silently because their stdout/stderr/stdin no longer work.
 
-allow_remote_control yes
+# allow_remote_control no
 
 #: Allow other programs to control kitty. If you turn this on other
 #: programs can control all aspects of kitty, including sending text
@@ -719,7 +605,7 @@ allow_remote_control yes
 
 #: The value of MYVAR2 will be a/<path to home directory>/b.
 
-# update_check_interval 0.0
+# update_check_interval 24
 
 #: Periodically check if an update to kitty is available. If an update
 #: is found a system notification is displayed informing you of the
@@ -890,7 +776,7 @@ allow_remote_control yes
 
 #: For example::
 
-#:     map ctrl+f>2 set_font_size  11
+#:     map ctrl+f>2 set_font_size 20
 
 # kitty_mod ctrl+shift
 
@@ -1030,7 +916,7 @@ allow_remote_control yes
 
 #: You can also create shortcuts to go to specific tabs, with 1 being
 #: the first tab, 2 the second tab and -1 being the previously active
-#: tab, and any number larger than the last tab being the last tab::
+#: tab::
 
 #:     map ctrl+alt+1 goto_tab 1
 #:     map ctrl+alt+2 goto_tab 2
@@ -1062,18 +948,18 @@ allow_remote_control yes
 #: You can change the font size for all top-level kitty OS windows at
 #: a time or only the current one.
 
-# map kitty_mod+equal     change_font_size  11
-# map kitty_mod+minus     change_font_size  11
-# map kitty_mod+backspace change_font_size  11
+# map kitty_mod+equal     change_font_size all +2.0
+# map kitty_mod+minus     change_font_size all -2.0
+# map kitty_mod+backspace change_font_size all 0
 
 #: To setup shortcuts for specific font sizes::
 
-#:     map kitty_mod+f6 change_font_size  11
+#:     map kitty_mod+f6 change_font_size all 10.0
 
 #: To setup shortcuts to change only the current OS window's font
 #: size::
 
-#:     map kitty_mod+f6 change_font_size  11
+#:     map kitty_mod+f6 change_font_size current 10.0
 #: }}}
 
 #: Select and act on visible text {{{
@@ -1111,11 +997,6 @@ allow_remote_control yes
 #: Select something that looks like a hash and insert it into the
 #: terminal. Useful with git, which uses sha1 hashes to identify
 #: commits
-
-# map kitty_mod+p>n kitten hints --type linenum
-
-#: Select something that looks like filename:linenum and open it in
-#: vim at the specified line number.
 
 
 #: The hints kitten has many more modes of operation that you can map
@@ -1186,3 +1067,13 @@ allow_remote_control yes
 #: }}}
 
 # }}}
+
+map alt+1 goto_tab 1
+map alt+2 goto_tab 2
+map alt+3 goto_tab 3
+map alt+4 goto_tab 4
+map alt+5 goto_tab 5
+map alt+6 goto_tab 6
+map alt+7 goto_tab 7
+map alt+8 goto_tab 8
+map alt+9 goto_tab 9
