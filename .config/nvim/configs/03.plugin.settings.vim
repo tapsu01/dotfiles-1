@@ -15,9 +15,9 @@ let NERDTreeDirArrows = 1
 syntax enable
 set termguicolors
 set background=dark
-colorscheme gruvbox
+colorscheme dracula
 highlight Normal ctermbg=None
-let g:airline_theme = "gruvbox"
+" let g:airline_theme = "dracula"
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1

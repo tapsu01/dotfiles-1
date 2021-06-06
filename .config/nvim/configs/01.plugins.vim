@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/bundle')
 
 Plug 'preservim/nerdtree'
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dense-analysis/ale'
