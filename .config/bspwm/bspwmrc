@@ -8,7 +8,7 @@ feh --bg-fil $HOME/Pictures/bg.jpg
 bspc monitor eDP-1 -d I II III IV V 
 bspc monitor DP-3 -d VI VII VIII IX X
 
-$HOME/.config/polybar/forest/launch.sh
+$HOME/global/dotfiles/polybar/styles/launch.sh
 
 bspc config border_width         2
 bspc config window_gap          12

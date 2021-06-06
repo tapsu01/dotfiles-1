@@ -147,5 +147,4 @@ super + shift + s
   sleep 0.5 && scrot -s -e 'xclip -selection clipboard -t image/png -i $f; rm -rf $f;'
 
 super + F4
-  ~/.config/rofi/applets/menu/powermenu.sh
-  
+  $HOME/global/dotfiles/polybar/styles/scripts/powermenu.sh  
