@@ -143,8 +143,11 @@ super + shift + {Left,Down,Up,Right}
 	    || bspc node -m "$dir" --follow
 
 # Clipboard
-super + shift + s
-  sleep 0.5 && scrot -s -e 'xclip -selection clipboard -t image/png -i $f; rm -rf $f;'
+super + ctrl + s
+  sleep 0.5 && scrot -s -q 100 -e 'xclip -selection clipboard -t image/png -i $f; rm -rf $f;'
 
 super + F4
   $HOME/global/dotfiles/polybar/styles/scripts/powermenu.sh  
+
+super + shift + {1-9}
+    id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
