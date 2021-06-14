@@ -20,7 +20,7 @@ super + ctrl + c
 
 # Launcher
 super + a
-  rofi -no-config -no-lazy-grab -show drun -modi drun -theme $HOME/Workspace/global/dotfiles/polybar/styles/scripts/configs/menu.rasi
+  $HOME/Workspace/global/dotfiles/polybar/styles/scripts/launcher.sh
 
 super + e
   nemo

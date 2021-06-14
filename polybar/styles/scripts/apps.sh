@@ -21,7 +21,7 @@ settings=""
 
 # Error msg
 msg() {
-	rofi -theme "$current_dir/message.rasi" -e "$1"
+	rofi -theme "$current_dir/configs/message.rasi" -e "$1"
 }
 
 # Variable passed to rofi
@@ -35,7 +35,7 @@ case $chosen in
 		elif [[ -f /usr/bin/urxvt ]]; then
 			urxvt &
 		elif [[ -f /usr/bin/kitty ]]; then
-			kitty &
+			kitty --directory ~/Workspace &
 		elif [[ -f /usr/bin/xterm ]]; then
 			xterm &
 		elif [[ -f /usr/bin/xfce4-terminal ]]; then
@@ -47,8 +47,8 @@ case $chosen in
 		fi
         ;;
     $files)
-		if [[ -f /usr/bin/thunar ]]; then
-			thunar &
+		if [[ -f /usr/bin/nemo ]]; then
+			nemo &
 		elif [[ -f /usr/bin/pcmanfm ]]; then
 			pcmanfm &
 		else
@@ -71,8 +71,8 @@ case $chosen in
     $browser)
 		if [[ -f /usr/bin/firefox ]]; then
 			firefox &
-		elif [[ -f /usr/bin/chromium ]]; then
-			chromium &
+		elif [[ -f /usr/bin/google-chrome ]]; then
+			google-chrome &
 		elif [[ -f /usr/bin/midori ]]; then
 			midori &
 		else
