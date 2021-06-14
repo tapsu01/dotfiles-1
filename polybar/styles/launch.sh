@@ -2,7 +2,7 @@
 
 # Add this script to your wm startup file.
 
-DIR="$HOME/global/dotfiles/polybar/styles"
+DIR="$HOME/Workspace/global/dotfiles/polybar/styles"
 
 # Terminate already running bar instances
 killall -q polybar

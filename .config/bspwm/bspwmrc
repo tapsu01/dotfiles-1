@@ -2,13 +2,15 @@
 
 sxhkd &
 ibus-daemon &
+touchegg &
 skypeforlinux &
+libinput-gestures-setup start 
 feh --bg-fil $HOME/Pictures/bg.jpg
 
 bspc monitor eDP-1 -d I II III IV V 
 bspc monitor DP-3 -d VI VII VIII IX X
 
-$HOME/global/dotfiles/polybar/styles/launch.sh
+$HOME/Workspace/global/dotfiles/polybar/styles/launch.sh
 
 bspc config border_width         2
 bspc config window_gap          12

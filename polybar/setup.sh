@@ -15,26 +15,8 @@ install_font() {
 	fi
 }
 
-install_theme() {
-	if [[ -d "$PDIR" ]]; then
-		echo -e "[*] Creating a backup of your polybar configs..."
-		mv "$PDIR" "${PDIR}.old"
-  fi
-
-	{ mkdir -p "$PDIR"; cp -rf $DIR/styles/* "$PDIR"; }	
-
-	if [[ -f "$PDIR/launch.sh" ]]; then
-		echo -e "[*] Successfully Installed.\n"
-		exit 0
-	else
-		echo -e "[!] Failed to install.\n"
-		exit 1
-	fi
-}
-
 main() {
   install_font
-  install_theme
 }
 
 main

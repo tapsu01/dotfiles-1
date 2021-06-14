@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	kitty
+	kitty --directory ~/Workspace
 
 # program launcher
 super + @space
@@ -20,7 +20,7 @@ super + ctrl + c
 
 # Launcher
 super + a
-  rofi -no-config -no-lazy-grab -show drun -modi drun -theme $HOME/.config/polybar/forest/scripts/rofi/launcher.rasi
+  rofi -no-config -no-lazy-grab -show drun -modi drun -theme $HOME/Workspace/global/dotfiles/polybar/styles/scripts/configs/menu.rasi
 
 super + e
   nemo
@@ -147,7 +147,7 @@ super + ctrl + s
   sleep 0.5 && scrot -s -q 100 -e 'xclip -selection clipboard -t image/png -i $f; rm -rf $f;'
 
 super + F4
-  $HOME/global/dotfiles/polybar/styles/scripts/powermenu.sh  
+  $HOME/Workspace/global/dotfiles/polybar/styles/scripts/powermenu.sh  
 
 super + shift + {1-9}
     id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}

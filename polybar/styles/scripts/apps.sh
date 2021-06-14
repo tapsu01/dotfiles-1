@@ -4,10 +4,11 @@
 ## Mail    : adi1090x@gmail.com
 ## Github  : @adi1090x
 ## Twitter : @adi1090x
+current_dir="$HOME/Workspace/global/dotfiles/polybar/styles/scripts"
 
-style="$($HOME/.config/rofi/applets/menu/style.sh)"
+style="$($current_dir/style.sh)"
 
-dir="$HOME/.config/rofi/applets/menu/configs/$style"
+dir="$current_dir/configs/$style"
 rofi_command="rofi -theme $dir/apps.rasi"
 
 # Links
@@ -20,7 +21,7 @@ settings=""
 
 # Error msg
 msg() {
-	rofi -theme "$HOME/.config/rofi/applets/styles/message.rasi" -e "$1"
+	rofi -theme "$current_dir/message.rasi" -e "$1"
 }
 
 # Variable passed to rofi
