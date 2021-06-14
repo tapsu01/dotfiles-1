@@ -10,6 +10,8 @@ This includes `Linux Mint `, `bspwm`, `polybar`, `rofi`, `neovim`, ...etc
 ```
 sudo apt install kitty
 ```
+### libinput-gestures + touchegg
+**TODO**
 ### bspwm + polybar + rofi
 * In order to clone repository easily, let create a ssh key
 ```
