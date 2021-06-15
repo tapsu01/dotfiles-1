@@ -121,7 +121,7 @@ alias ezteam='global && ezteam'
 
 alias offshorevn-api='ezteam && cd dev/offshorevn-api'
 alias offshorevn-fe='ezteam && cd dev/offshorevn-fe'
-alias ezteam-check-health='ezteam && cd ezteam-check-health'
+alias ezteam-check-health='ezteam && cd dev/ezteam-check-health'
 
 alias ezteam-deploy-prod-api='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.143.195'
 alias ezteam-deploy-prod-fe='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.79.213'
