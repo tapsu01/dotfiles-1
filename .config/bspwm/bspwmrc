@@ -4,6 +4,7 @@ sxhkd &
 ibus-daemon &
 touchegg &
 skypeforlinux &
+mailspring --background &
 libinput-gestures-setup start 
 feh --bg-fil $HOME/Pictures/bg.jpg
 

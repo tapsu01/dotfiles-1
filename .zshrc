@@ -110,8 +110,9 @@ alias ssh='kitty +kitten ssh'
 alias nvimconf='cd ~/.config/nvim && nvim'
 alias rm='rm -i'
 
+alias workspace='cd ~/Workspace'
 
-alias global='cd ~/Workspace/global'
+alias global='workspace && cd global'
 
 
 alias dotfiles='global && cd dotfiles'
@@ -123,12 +124,12 @@ alias offshorevn-api='ezteam && cd dev/offshorevn-api'
 alias offshorevn-fe='ezteam && cd dev/offshorevn-fe'
 alias ezteam-check-health='ezteam && cd dev/ezteam-check-health'
 
-alias ezteam-deploy-prod-api='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.143.195'
-alias ezteam-deploy-prod-fe='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.79.213'
-alias ezteam-deploy-log='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
-alias ezteam-deploy-sandbox='ezteam && ssh -i ./ezteam.pem ec2-user@13.212.7.30'
-alias ezteam-deploy-dev='ezteam && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
-alias ezteam-deploy-cicd='ezteam && ssh -i ./ezteam.pem ec2-user@13.228.21.39'
+alias ezteam-deploy-prod-api='credentials && ssh -i ./ezteam.pem ec2-user@13.212.143.195'
+alias ezteam-deploy-prod-fe='credentials && ssh -i ./ezteam.pem ec2-user@13.212.79.213'
+alias ezteam-deploy-log='credentials && ssh -i ./ezteam.pem ec2-user@54.169.207.176'
+alias ezteam-deploy-sandbox='credentials && ssh -i ./ezteam.pem ec2-user@13.212.7.30'
+alias ezteam-deploy-dev='credentials && ssh -i ./ezteam.pem ec2-user@54.169.120.150'
+alias ezteam-deploy-cicd='credentials && ssh -i ./ezteam.pem ec2-user@13.228.21.39'
 
 
 alias pbl5='global && cd pbl5'
@@ -147,4 +148,12 @@ alias vnoi='cp-training && cd VNOI'
 
 alias hod='cd ~/Workspace/hod'
 
+alias mail-notification='global && cd mail-notification'
+
+alias napa='global && cd napa'
+alias napa-fe-en='napa && cd napa-fe-en'
+alias napa-api='napa && cd napa-api'
+alias napa-deploy-api-production='credentials && ssh -i ./napa-key.pem ec2-user@13.212.175.107'
+
+alias credentials='global && cd credentials'
 export PATH=$HOME/.local/bin:$PATH

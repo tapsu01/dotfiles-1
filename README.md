@@ -10,8 +10,18 @@ This includes `Linux Mint `, `bspwm`, `polybar`, `rofi`, `neovim`, ...etc
 ```
 sudo apt install kitty
 ```
-### libinput-gestures + touchegg
-**TODO**
+### libinput-gestures
+* Install
+```
+git clone https://github.com/bulletmark/libinput-gestures.git
+cd libinput-gestures
+sudo make install (or sudo ./libinput-gestures-setup install)
+```
+* Configuration
+```
+sudo cp libinput-gestures.conf /etc/
+libinput-gestures-setup restart
+```
 ### bspwm + polybar + rofi
 * In order to clone repository easily, let create a ssh key
 ```

@@ -50,6 +50,7 @@ noremap <leader>- <C-W>-
 noremap <leader>= <C-W>+
 
 set foldmethod=syntax
+autocmd FileType python setlocal foldmethod=indent
 set foldcolumn=1
 let javaScript_fold=1
 set foldlevelstart=99
