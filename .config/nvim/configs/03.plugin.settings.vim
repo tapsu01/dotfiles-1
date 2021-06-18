@@ -130,7 +130,7 @@ let g:NERDToggleCheckAllLines = 1
 " Git
 nmap <leader>gs :G<CR>
 nmap <leader>gd :Gdiffsplit<CR>
-nmap <leader>gc :Gcommit<CR>
+nmap <leader>gc :Git commit<CR>
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 nmap <leader>gb :Gblame<CR>
