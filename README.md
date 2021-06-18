@@ -106,6 +106,13 @@ sudo apt install curl dirmngr apt-transport-https lsb-release ca-certificates
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
 ```
+### fd + ripgrep
+```
+wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd-musl_7.3.0_amd64.deb
+sudo apt install ./fd-musl_7.3.0_amd64.deb && rm -rf ./fd-musl_7.3.0_amd64.deb
+
+sudo apt install ripgrep
+```
 ### Neovim
 ```
 sudo add-apt-repository ppa:neovim-ppa/stable 
