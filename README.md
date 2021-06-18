@@ -37,6 +37,14 @@ sudo make install (or sudo ./libinput-gestures-setup install)
 sudo cp libinput-gestures.conf /etc/
 libinput-gestures-setup restart
 ```
+### zsh
+```
+sudo apt update
+sudo apt install zsh
+sudo usermod -s /usr/bin/zsh $(whoami)
+```
+
+
 ### bspwm + polybar + rofi
 * In order to clone repository easily, let create a ssh key
 ```
