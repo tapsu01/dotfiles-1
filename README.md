@@ -3,9 +3,14 @@
 This repository is configuration of linux combo which I'm using.
 This includes `Linux Mint `, `bspwm`, `polybar`, `rofi`, `neovim`, ...etc
 ## Installation
-### Linux Mint
+### Linux Mint Xfce
 * Prepair a parition about > 50GB (I think it's enough for my work)
 * Follow instruction on Youtube, it's quite easy
+### Remove unused file
+```
+sudo apt remove firefox drawing pix gnote warpinator simple-scan hexchat transmission-common hypnotix
+sudo apt autoremove
+```
 ### kitty
 ```
 sudo apt install kitty
