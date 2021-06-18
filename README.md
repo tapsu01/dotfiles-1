@@ -131,12 +131,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ### Onedrive
 ```
-sudo apt install build-essential
-sudo apt install libcurl4-openssl-dev
-sudo apt install libsqlite3-dev
-sudo apt install pkg-config
-sudo apt install git
-sudo apt install curl
+sudo apt install build-essential libcurl4-openssl-dev libsqlite3-dev pkg-config
 curl -fsS https://dlang.org/install.sh | bash -s dmd
 
 
