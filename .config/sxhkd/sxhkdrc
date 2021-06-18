@@ -23,7 +23,7 @@ super + a
   $HOME/Workspace/global/dotfiles/polybar/styles/scripts/launcher.sh
 
 super + e
-  nemo
+  thunar
 
 #
 # bspwm hotkeys
