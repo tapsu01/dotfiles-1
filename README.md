@@ -73,7 +73,19 @@ Copy the file with extension `.pub` and paste to SSH keygen of Github
 * Install and configuration
 ```
 sudo apt update
-sudo apt install bspwm kakoune dmenu rofi scrot feh dunst
+sudo apt install bspwm kakoune dmenu rofi scrot feh dunst 
+
+# install polybar
+sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
+sudo apt install libnl-genl-3-dev libasound2-dev
+git clone --recursive https://github.com/polybar/polybar
+cd polybar
+mkdir build
+cd build
+cmake .. -DENABLE_ALSA=ON
+make -j$(nproc)
+sudo make install
+
 
 mkdir ~/Workspace && cd ~/Workspace
 git clone git@github.com:lioaslan/global.git
