@@ -133,6 +133,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 sudo apt install build-essential libcurl4-openssl-dev libsqlite3-dev pkg-config
 curl -fsS https://dlang.org/install.sh | bash -s dmd
+source ~/dlang/dmd-xxxxxxxxx/activate # Change version following instruction in previous command
 
 
 git clone https://github.com/abraunegg/onedrive.git
