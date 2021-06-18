@@ -18,6 +18,16 @@ sudo apt install kitty
 ### libinput-gestures
 * Install
 ```
+sudo gpasswd -a $USER input
+```
+Reboot computer
+```
+sudo install git
+sudo apt-get install wmctrl xdotool
+sudo apt-get install libinput-tools
+sudo apt install gcc g++ make
+
+
 git clone https://github.com/bulletmark/libinput-gestures.git
 cd libinput-gestures
 sudo make install (or sudo ./libinput-gestures-setup install)
