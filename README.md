@@ -43,7 +43,25 @@ sudo apt update
 sudo apt install zsh
 sudo usermod -s /usr/bin/zsh $(whoami)
 ```
+Reboot computer
+```
+## Install oh-my-zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+## Install zsh-theme-powerlevel9k
+sudo apt-get install zsh-theme-powerlevel9k
+
+## Install zsh-syntax-highlighting
+sudo apt-get install zsh-syntax-highlighting
+
+## Instal zsh-autosuggestion
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+## Turn on extension above
+echo "source /usr/share/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+echo "source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+```
 
 ### bspwm + polybar + rofi
 * In order to clone repository easily, let create a ssh key
@@ -55,19 +73,19 @@ Copy the file with extension `.pub` and paste to SSH keygen of Github
 * Install and configuration
 ```
 sudo apt update
-sudo apt install bspwm kakoune dmenu rofi scrot feh
+sudo apt install bspwm kakoune dmenu rofi scrot feh dunst
 
+mkdir ~/Workspace && cd ~/Workspace
 git clone git@github.com:lioaslan/global.git
 cd global && ./init.sh
 
-# before next step, please make sure that file setup dont' have any comment line code
-./setup.sh
+cd dotfiles
+source ./setup.sh
 
 cd polybar
 ./setup.sh
 
 ```
-* Download a wallpaper and put it into `~/Pictures` with name `bg.jpg`
 * After that, logout and login again to bspwm WM
 ### Node
 ```
