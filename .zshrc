@@ -152,6 +152,7 @@ alias mail-notification='global && cd mail-notification'
 
 alias napa='global && cd napa'
 alias napa-fe-en='napa && cd napa-fe-en'
+alias napa-fe-jp='napa && cd napa-fe-jp'
 alias napa-api='napa && cd napa-api'
 alias napa-deploy-api-production='credentials && ssh -i ./napa-key.pem ec2-user@13.212.175.107'
 
