@@ -11,6 +11,10 @@ This includes `Linux Mint `, `bspwm`, `polybar`, `rofi`, `neovim`, ...etc
 sudo apt remove firefox drawing pix gnote warpinator simple-scan hexchat transmission-common hypnotix
 sudo apt autoremove
 ```
+### Make Linux using OS time
+```
+timedatectl set-local-rtc 1
+```
 ### kitty
 ```
 sudo apt install kitty
@@ -159,3 +163,23 @@ ibus restart
 # Đặt ibus-bamboo làm bộ gõ mặc định
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['xkb:us::eng', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 ```
+### Skype
+```
+wget https://repo.skype.com/latest/skypeforlinux-64.deb
+sudo apt install ./skypeforlinux-64.deb
+rm -f ./skypeforlinux-64.deb
+```
+### Dbeaver
+```
+wget https://download.dbeaver.com/community/21.1.0/dbeaver-ce_21.1.0_amd64.deb
+sudo apt install ./dbeaver-ce_21.1.0_amd64.deb
+rm -f ./dbeaver-ce_21.1.0_amd64.deb
+```
+## Notion
+```
+wget https://github.com/davidbailey00/notion-linux/releases/download/v2.0.6-windows/notion-desktop_2.0.6_amd64.deb
+sudo apt install ./notion-desktop_2.0.6_amd64.deb
+rm -f ./notion-desktop_2.0.6_amd64.deb
+```
+## Setting mouse, touchpad
+Follow [this](https://wiki.archlinux.org/title/Libinput#Via_Xorg_configuration_file)
