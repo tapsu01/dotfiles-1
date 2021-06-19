@@ -163,3 +163,15 @@ ibus restart
 # Đặt ibus-bamboo làm bộ gõ mặc định
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['xkb:us::eng', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 ```
+### Skype
+```
+wget https://repo.skype.com/latest/skypeforlinux-64.deb
+sudo apt install ./skypeforlinux-64.deb
+rm -f ./skypeforlinux-64.deb
+```
+### Dbeaver
+```
+wget https://download.dbeaver.com/community/21.1.0/dbeaver-ce_21.1.0_amd64.deb
+sudo apt install ./dbeaver-ce_21.1.0_amd64.deb
+rm -f ./dbeaver-ce_21.1.0_amd64.deb
+```
