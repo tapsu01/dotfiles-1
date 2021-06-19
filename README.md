@@ -11,6 +11,10 @@ This includes `Linux Mint `, `bspwm`, `polybar`, `rofi`, `neovim`, ...etc
 sudo apt remove firefox drawing pix gnote warpinator simple-scan hexchat transmission-common hypnotix
 sudo apt autoremove
 ```
+### Make Linux using OS time
+```
+timedatectl set-local-rtc 1
+```
 ### kitty
 ```
 sudo apt install kitty
