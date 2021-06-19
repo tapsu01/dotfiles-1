@@ -175,3 +175,11 @@ wget https://download.dbeaver.com/community/21.1.0/dbeaver-ce_21.1.0_amd64.deb
 sudo apt install ./dbeaver-ce_21.1.0_amd64.deb
 rm -f ./dbeaver-ce_21.1.0_amd64.deb
 ```
+## Notion
+```
+wget https://github.com/davidbailey00/notion-linux/releases/download/v2.0.6-windows/notion-desktop_2.0.6_amd64.deb
+sudo apt install ./notion-desktop_2.0.6_amd64.deb
+rm -f ./notion-desktop_2.0.6_amd64.deb
+```
+## Setting mouse, touchpad
+Follow [this](https://wiki.archlinux.org/title/Libinput#Via_Xorg_configuration_file)
