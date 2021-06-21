@@ -183,3 +183,10 @@ rm -f ./notion-desktop_2.0.6_amd64.deb
 ```
 ## Setting mouse, touchpad
 Follow [this](https://wiki.archlinux.org/title/Libinput#Via_Xorg_configuration_file)
+## Setting boot logo
+```
+sudo cp ./images/boot-logo.png /usr/share/plymouth/themes/mint-logo/logo.png
+sudo cp ./images/spinner-custom.png /usr/share/plymouth/themes/mint-logo/spinner.png
+sudo update-iniramfs -u
+```
+And then reboot the computer
