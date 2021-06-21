@@ -158,3 +158,4 @@ alias napa-deploy-api-production='credentials && ssh -i ./napa-key.pem ec2-user@
 
 alias credentials='global && cd credentials'
 export PATH=$HOME/.local/bin:$PATH
+export PYTHONPATH=$HOME/Workspace/global/pbl5/pbl5-api

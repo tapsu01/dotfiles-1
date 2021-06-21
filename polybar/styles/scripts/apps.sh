@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-## Author  : Aditya Shakya
-## Mail    : adi1090x@gmail.com
-## Github  : @adi1090x
-## Twitter : @adi1090x
+## Author: Leo Aslan
+## Mail: leoalan5577@gmail.com
+## Github: @lioaslan
+
 current_dir="$HOME/Workspace/global/dotfiles/polybar/styles/scripts"
 
 style="$($current_dir/style.sh)"
