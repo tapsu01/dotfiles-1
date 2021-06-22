@@ -128,6 +128,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # install dependencies
 sudo npm i -g eslint prettier
 pip3 install yapf pylint
+sudo apt install clang-format
 
 cd ~/.config/nvim && nvim init.vim
 ```
